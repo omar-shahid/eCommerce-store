@@ -12,7 +12,7 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/shop">Shop</Link>
+            <Link to="/store">Shop</Link>
           </li>
           <li>
             <span>

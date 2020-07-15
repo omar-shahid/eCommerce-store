@@ -4,3 +4,9 @@
 .col {
   flex: 1;
 }
+.col-6 {
+  flex: 0.6;
+}
+.col-4 {
+  flex: 0.4;
+}

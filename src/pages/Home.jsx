@@ -18,9 +18,9 @@ function Home() {
                 numquam nisi? Consequuntur beatae repellat dicta labore
                 repudiandae possimus.
               </p>
-              <button className="button mt-1">
-                <Link to="/shop">Browse Products</Link>
-              </button>
+              <Link to="/store">
+                <button className="button mt-1">Browse Products</button>
+              </Link>
             </div>
           </div>
           <div

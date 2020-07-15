@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 // Pages
 import Home from "./pages/Home"
+import Store from "./pages/Store"
 
 // Custom Components
 import Navbar from "./components/Navbar"
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/store" element={<Store />} />
       </Routes>
     </BrowserRouter>
   )

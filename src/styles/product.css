@@ -1,0 +1,33 @@
+.product-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 83px;
+}
+.quantity-controller {
+  display: flex;
+}
+.quantity-controller button {
+  padding: 12px 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background: #0568a4;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  max-height: 120px;
+}
+.quantity-controller div {
+  padding: 12px 16px;
+  width: 20px;
+  background-color: #ced6e0;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
