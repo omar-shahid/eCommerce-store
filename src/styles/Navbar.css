@@ -1,0 +1,47 @@
+.nav-wrapper {
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.25);
+}
+
+.top-nav {
+  margin: 0 auto;
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  flex: 1;
+  color: #026aa4;
+}
+
+.top-nav ul {
+  display: flex;
+  flex: 3;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-nav ul li {
+  list-style: none;
+}
+.top-nav ul li a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #444545;
+}
+
+@media screen and (max-weight: 800px) {
+  .logo {
+    font-size: 23px;
+  }
+}

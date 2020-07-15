@@ -1,0 +1,18 @@
+[badge]:after {
+  background: #80aed1;
+  border-radius: 30px;
+  color: #fff;
+  content: attr(badge);
+  font-size: 11px;
+  margin-top: -10px;
+  min-width: 20px;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+}
+
+[badge^="-"]:after,
+[badge="0"]:after,
+[badge=""]:after {
+  display: none;
+}
