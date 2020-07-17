@@ -1,8 +1,12 @@
 import React, { useContext } from "react"
-import "./../styles/cart.css"
+import Helmet from "react-helmet"
+
 import CartItem from "../components/CartItem"
+
 import { CartContext } from "./../CartContext"
 import { CartCountContext } from "./../CartCountContext"
+
+import "./../styles/cart.css"
 
 function Cart() {
   const { dispatch, state } = useContext(CartContext)
@@ -25,6 +29,9 @@ function Cart() {
   }
   return (
     <>
+      <Helmet>
+        <title>Cart - E Commerce Site - BootCamp 2020 Project</title>
+      </Helmet>
       {state.length > 0 ? (
         <div className="container-xl">
           <h1 className="banner-heading text-center">Cart</h1>

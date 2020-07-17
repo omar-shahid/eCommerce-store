@@ -1,11 +1,18 @@
 import React from "react"
-import products from "./../products.json"
-import "./../styles/product.css"
+import Helmet from "react-helmet"
+
 import ProductCard from "../components/ProductCard"
+
+import products from "./../products.json"
+
+import "./../styles/product.css"
 
 function Store() {
   return (
     <div className="container-xl">
+      <Helmet>
+        <title>Store - E Commerce Site - BootCamp 2020 Project</title>
+      </Helmet>
       <h1 className="banner-heading text-center">Our Products</h1>
       <br />
       <br />
