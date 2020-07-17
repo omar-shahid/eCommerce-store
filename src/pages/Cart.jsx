@@ -52,6 +52,7 @@ function Cart() {
               onClick={clearAllContext}
               className="button"
               style={{ marginRight: "20px" }}
+              disabled={getTotalPrice() === 0}
             >
               Checkout
             </button>

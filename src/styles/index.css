@@ -156,3 +156,10 @@ p {
     flex-direction: column;
   }
 }
+
+button[disabled] {
+  background-color: #80aed1;
+}
+button[disabled]:hover {
+  cursor: not-allowed;
+}

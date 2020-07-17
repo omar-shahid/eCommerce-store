@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 // Pages
 import Home from "./pages/Home"
 import Store from "./pages/Store"
+import Cart from "./pages/Cart"
 
 // Custom Components
 import Navbar from "./components/Navbar"
@@ -12,7 +13,6 @@ import Navbar from "./components/Navbar"
 import "./styles/grid.css"
 import "./styles/index.css"
 import "./styles/badge.css"
-import Cart from "./pages/Cart"
 
 function App() {
   return (

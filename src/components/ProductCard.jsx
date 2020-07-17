@@ -42,6 +42,7 @@ function ProductCard({ product }) {
           <div className="d-flex align-items-center mt-1">
             <button
               onClick={() => addToCart(product)}
+              disabled={qty === 0}
               className="button"
               style={{ marginRight: "20px" }}
             >
