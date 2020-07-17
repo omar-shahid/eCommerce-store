@@ -1,0 +1,48 @@
+table.cart {
+  border-collapse: collapse;
+  width: 100%;
+  display: block;
+}
+
+table.cart,
+td {
+  border: 1px solid lightgray;
+}
+td img {
+  width: 100%;
+}
+td {
+  width: 20vw;
+  vertical-align: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+th {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  background-color: #80aed1;
+  color: white;
+  padding: 16px;
+}
+
+td .quantity-controller {
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+@media screen and (max-width: 800px) {
+  table.cart {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  th {
+    width: auto;
+    min-width: 20vw;
+    padding: 19px 23px;
+  }
+}

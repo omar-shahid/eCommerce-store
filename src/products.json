@@ -1,40 +1,46 @@
 {
   "products": [
     {
+      "id": "1",
       "title": "Nike black sports shoes",
       "price": "350",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc venenatis, tempus turpis quis, faucibus dui. Donec quis dui mauris. Aliquam orci ipsum, vestibulum",
       "image": "http://clipart-library.com/new_gallery/30-303659_nike-running-shoes-png-image-transparent-free-download.png"
     },
     {
+      "id": "2",
       "title": "Nike orange sports shoes",
       "price": "200",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc venenatis, tempus turpis quis, faucibus dui. Donec quis dui mauris. Aliquam orci ipsum, vestibulum",
       "image": "http://clipart-library.com/new_gallery/98-988425_jordan-shoes-png-transparent-background-jordan-why-not.png"
     },
     {
+      "id": "3",
       "title": "Nike black sports shoes",
       "price": "175",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc venenatis, tempus turpis quis, faucibus dui. Donec quis dui mauris. Aliquam orci ipsum, vestibulum",
-      "image": "http://clipart-library.com/new_gallery/99-991171_boots-shoe-free-png-transparent-background-images-free.png"
+      "image": "/public_images/99-991171_boots-shoe-free-png-transparent-background-images-free.png"
     },
     {
+      "id": "4",
       "title": "Nike pink sports shoes",
       "price": "410",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc venenatis, tempus turpis quis, faucibus dui. Donec quis dui mauris. Aliquam orci ipsum, vestibulum",
-      "image": "http://clipart-library.com/new_gallery/30-303663_nike-running-shoes-png-transparent-image-presto-extreme.png"
+      "image": "/public_images/30-303663_nike-running-shoes-png-transparent-image-presto-extreme.png"
     },
     {
+      "id": "5",
       "title": "Nike green sports shoes",
       "price": "175",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc venenatis, tempus turpis quis, faucibus dui. Donec quis dui mauris. Aliquam orci ipsum, vestibulum",
-      "image": "http://clipart-library.com/new_gallery/43-430612_shoes-png-shoe-png-no-background.png"
+      "image": "/public_images/43-430612_shoes-png-shoe-png-no-background.png"
     },
     {
+      "id": "6",
       "title": "Nike orange sports shoes",
       "price": "410",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc venenatis, tempus turpis quis, faucibus dui. Donec quis dui mauris. Aliquam orci ipsum, vestibulum",
-      "image": "http://clipart-library.com/images_k/shoe-transparent-background/shoe-transparent-background-18.png"
+      "image": "/public_images/shoe-transparent-background-18.png"
     }
   ]
 }

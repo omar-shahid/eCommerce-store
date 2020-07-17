@@ -138,6 +138,8 @@ p {
 @media screen and (max-width: 568px) {
   .banner-heading {
     font-size: 43px;
+    line-height: 54px;
+    margin-bottom: 15px;
   }
   .banner.p-5 {
     padding: 2em;
