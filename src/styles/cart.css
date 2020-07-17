@@ -46,3 +46,15 @@ td .quantity-controller {
     padding: 19px 23px;
   }
 }
+.total {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+}
+.total span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #0568a4;
+}

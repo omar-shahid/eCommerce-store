@@ -9,13 +9,20 @@ export const CartContextProvider = ({ children }) => {
         return [...state, action.payload]
 
       case "REMOVE_PRODUCT":
-        return state.filter((product) => product.id === action.payload)
+        return state.filter((product) => product.id !== action.payload)
 
       case "UPDATE_QUANTITY":
-        const prevState = state.filter(
-          (product) => product.id === action.payload
+        const prevProd = state.find(
+          (product) => product.id === action.payload.id
         )
-        return [...prevState, action.payload]
+
+        const prevProdIndex = state.indexOf(prevProd)
+        state[prevProdIndex] = action.payload
+
+        return [...state]
+
+      case "CLEAR":
+        return []
 
       default:
         return state

@@ -1,13 +1,32 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
+import { CartContext } from "./../CartContext"
+import { CartCountContext } from "./../CartCountContext"
 
 function ProductCard({ product }) {
   const [qty, setQty] = useState(0)
+
+  const { dispatch } = useContext(CartContext)
+  const { setCount } = useContext(CartCountContext)
+
   const addQty = () => {
     setQty((prevQty) => prevQty + 1)
   }
   const removeQty = () => {
     if (qty === 0) return
     setQty((prevQty) => prevQty - 1)
+  }
+  const addToCart = () => {
+    dispatch({
+      type: "ADD_PRODUCT",
+      payload: { ...product, qty },
+    })
+    setCount((prevCount) => prevCount + 1)
+    setQty(0)
+  }
+
+  const getPrice = () => {
+    if (qty === 0) return product.price
+    return product.price * qty
   }
 
   return (
@@ -21,7 +40,11 @@ function ProductCard({ product }) {
           <h1 className="product-heading">{product.title}</h1>
           <p>{product.description}</p>
           <div className="d-flex align-items-center mt-1">
-            <button className="button" style={{ marginRight: "20px" }}>
+            <button
+              onClick={() => addToCart(product)}
+              className="button"
+              style={{ marginRight: "20px" }}
+            >
               Add to Cart
             </button>
             <div className="quantity-controller">
@@ -29,6 +52,7 @@ function ProductCard({ product }) {
               <div className="d-flex justify-content-center">{qty}</div>
               <button onClick={removeQty}>-</button>
             </div>
+            <h2>${getPrice()}</h2>
           </div>
         </div>
         <div className="col-4">

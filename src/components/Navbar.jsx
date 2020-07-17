@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import "./../styles/Navbar.css"
+import { CartCountContext } from "./../CartCountContext"
 
 function Navbar() {
+  const { count } = useContext(CartCountContext)
   return (
     <div className="nav-wrapper">
       <nav className="top-nav">
@@ -15,7 +17,7 @@ function Navbar() {
             <Link to="/store">Shop</Link>
           </li>
           <li>
-            <span>
+            <span badge={count}>
               <Link to="/cart">Cart</Link>
             </span>
           </li>

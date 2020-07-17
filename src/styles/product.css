@@ -5,6 +5,12 @@
   font-size: 33px;
   line-height: 83px;
 }
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 20px;
+}
 .quantity-controller {
   display: flex;
 }
