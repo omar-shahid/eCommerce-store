@@ -31,3 +31,9 @@
   font-weight: normal;
   font-size: 18px;
 }
+
+@media screen and (max-width: 600px) {
+  .product-heading {
+    line-height: 55px;
+  }
+}

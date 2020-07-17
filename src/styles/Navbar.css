@@ -43,5 +43,16 @@
 @media screen and (max-weight: 800px) {
   .logo {
     font-size: 23px;
+    line-height: 22px !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .top-nav ul li a {
+    font-size: 15px;
+  }
+  .logo {
+    font-size: 18px;
+    line-height: 22px !important;
   }
 }

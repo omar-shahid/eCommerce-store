@@ -5,8 +5,8 @@ function Home() {
   return (
     <>
       <div className="h-100vh">
-        <div className="row h-100pr">
-          <div className="col-4 d-flex p-5 justify-content-center align-items-center">
+        <div className="row row-sm-unreverse h-100pr">
+          <div className="col-4 banner d-flex p-5 justify-content-center align-items-center">
             <div>
               <h1 class="banner-heading">This is a shoe store</h1>
               <p>
@@ -24,7 +24,7 @@ function Home() {
             </div>
           </div>
           <div
-            className="col-6 h-100pr banner"
+            className="col-6 h-100pr banner d-sm-none"
             style={{ backgroundImage: `url(${ShoeCover})` }}
           />
         </div>

@@ -112,15 +112,42 @@ p {
   margin-bottom: 3em;
 }
 
+.row-responsive-reverse {
+  flex-direction: row;
+}
+
 @media screen and (max-width: 800px) {
-  .row {
-    display: block;
-  }
   .container-xl {
     width: 90vw;
   }
   .productListContainer.p-5 {
     padding: 1em;
     height: auto !important;
+  }
+  .row-responsive-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .banner {
+    background-size: cover;
+  }
+  .d-sm-none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .banner-heading {
+    font-size: 43px;
+  }
+  .banner.p-5 {
+    padding: 2em;
+  }
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+  }
+  .row-sm-unreverse {
+    flex-direction: column;
   }
 }
