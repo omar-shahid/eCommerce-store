@@ -58,7 +58,7 @@ function ProductCard({ product }) {
         </div>
         <div className="col-4">
           <img
-            src={product.image}
+            src={`${process.env.PUBLIC_URL}${product.image}`}
             style={{
               maxWidth: "100%",
             }}
